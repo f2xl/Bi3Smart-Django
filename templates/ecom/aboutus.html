@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Bi3Smart</title>
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body style="background-color:#f7f7f7;">
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+  <br><br><br>
+  <br><br><br>
+<h3 style="text-align:center;">" Chez Bi3Smart votre satisfaction est notre priorité absolue. Notre équipe dévouée de service clientèle est disponible pour répondre à toutes vos questions, préoccupations ou commentaires. Que vous ayez besoin d'aide pour choisir le bon produit ou que vous rencontriez des problèmes après l'achat, nous sommes là pour vous aider à chaque étape du processus.
+  
+  Merci d'avoir choisi Bi3Smart ! " </h3>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  {% include "ecom/footer.html" %}
+</body>
+
+</html>
